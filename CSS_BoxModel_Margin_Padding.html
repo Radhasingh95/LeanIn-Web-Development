@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #8363c1;
+        }
+        .container{
+            background-color: aquamarine;
+            border:3px solid blue;
+            /* We can set margin/padding top, bottom, left, right like this  */
+            /* padding-top:79px; */
+            /* padding-bottom:79px; */
+            /* padding-left:79px; */
+            /* padding-right:79px; */
+            /* padding: top right bottom left;  */
+            /* padding: y(top/bottom) x(left/right);  */
+
+
+            margin:34px;
+            width:233px; 
+            /* But applied width will be containg padding and margin also but if we don't want this then what we can do is  */
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam iure itaque distinctio neque. Ex eum reprehenderit officiis autem consequuntur deserunt sequi cum!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam iure itaque distinctio neque. Ex eum reprehenderit officiis autem consequuntur deserunt sequi cum!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam iure itaque distinctio neque. Ex eum reprehenderit officiis autem consequuntur deserunt sequi cum!</p>
+    </div>
+</body>
+</html>
